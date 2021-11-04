@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read</title>
+</head>
+<body>
+    <tbody>
+        {% for one_user in users %}
+            <tr>
+                <td>{{ one_user.first_name }}</td>
+                <td>{{ one_user.last_name}}</td>
+                <td>{{ one_user.eamil}}</td>
+            </tr>
+        {% endfor%}
+    </tbody>
+    <a href="/form">Lets make another epic user</a>
+</body>
+</html>
